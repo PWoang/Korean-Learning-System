@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    margin: 0;
+    @media (min-width: 1600px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1800px !important;
+}
+}
+}
+
+.app-container {
+    .header-container {
+        padding-top: 20px;
+        button.btn-login {
+            height: 40px;
+            border-radius: 5px;
+            padding: 0 15px;
+            margin-right: 10px;
+            border: 1px solid black;
+                        }
+
+            button.btn-signup {
+            height: 40px;
+            border-radius: 5px;
+            padding: 0 15px;
+            margin-right: 10px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            &:hover {
+                    background-color: rgb(119, 118, 118);
+                    color: white;
+    }
+                        }
+        .navbar-nav{
+            .nav-link {
+                &.active{
+                    color:  red;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
