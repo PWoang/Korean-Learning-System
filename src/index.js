@@ -10,6 +10,8 @@ import Admin from "./components/Admin/Admin";
 import User from "./components/User/User";
 import Login from "./Auth/Login";
 import Signup from "./Auth/Signup";
+import Course from "./components/Course/Course";
+import About from "./components/About/About";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +22,8 @@ root.render(
           <Route path="admin" element={<Admin />} />
           <Route path="user" element={<User />} />
           <Route index element={<HomePage />} />
+          <Route path="course" element={<Course />} />
+          <Route path="about" element={<About />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

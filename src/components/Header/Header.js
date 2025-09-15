@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink, useNavigate } from "react-router-dom";
+import Image from "react-bootstrap/Image";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -18,11 +19,18 @@ const Header = () => {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <NavLink to="/" className="navbar-brand">
+          <Image
+            src="/korean-flag.jpg"
+            alt="Logo"
+            width="50"
+            height="40"
+            roundedCircle
+          ></Image>
           KLS
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="mx-auto">
             <NavLink to="/" className="nav-link">
               Home
             </NavLink>
@@ -31,6 +39,12 @@ const Header = () => {
             </NavLink>
             <NavLink to="/user" className="nav-link">
               User
+            </NavLink>
+            <NavLink to="/course" className="nav-link">
+              Course
+            </NavLink>
+            <NavLink to="/about" className="nav-link">
+              About
             </NavLink>
           </Nav>
           <Nav>

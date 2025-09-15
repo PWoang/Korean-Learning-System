@@ -17,6 +17,10 @@ body {
             padding: 0 15px;
             margin-right: 10px;
             border: 1px solid black;
+            &:hover {
+                    background-color: white;
+                    color: black;
+    }
                         }
 
             button.btn-signup {
@@ -34,6 +38,8 @@ body {
                         }
         .navbar-nav{
             .nav-link {
+                font-weight: 400;
+                margin-left: 15px;
                 &.active{
                     color:  red;
                     text-decoration: underline;
